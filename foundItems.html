@@ -1,0 +1,8 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body cz-shortcut-listen="true"><h3>Found Items</h3>
+<ol>
+  <li ng-repeat="item in foundItems">
+    {{ item.short_name }}, {{ item.description }}
+    <button ng-click="onRemove({index: $index});">Remove Item</button>
+  </li>
+</ol>
+</body></html>
